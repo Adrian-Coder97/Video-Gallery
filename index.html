@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Dela+Gothic+One&display=swap" rel="stylesheet">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Video Gallery</h1>
+        <div class="row">
+            <div class="col">
+                <div class="feature-img">
+                    <img src="./img/don-arceta-forza-horizon-4-night-drift.jpg" alt="" width="100%">
+                    <button onclick="playVideo('./media/v1.mp4')" id="playVideo" class="play-btn-main"><i
+                            class="fas fa-play "></i></button>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="row">
+            <div class="col">
+                <div class="small-img-row">
+                    <div class="small-img">
+                        <img src="./img/forza.jpg" alt="" width="85%">
+                        <button onclick="playVideo('./media/v2.mp4')" class="play-btn"><i
+                                class="fas fa-play "></i></button>
+                    </div>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                </div>
+                <div class="small-img-row">
+                    <div class="small-img">
+                        <img src="./img/5a9070dd7c0ee.jpg" alt="" width="85%">
+                        <button onclick="playVideo('./media/v3.mp4')" class="play-btn"><i
+                                class="fas fa-play "></i></button>
+                    </div>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                </div>
+                <div class="small-img-row">
+                    <div class="small-img">
+                        <img src="./img/2459030.jpg" alt="" width="85%">
+                        <button onclick="playVideo('./media/v4.mp4')" class="play-btn"><i
+                                class="fas fa-play "></i></button>
+                    </div>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="videoPlayer" class="video-player">
+        <video id="myVideo" src="./media/v11.mp4" height="610px" width="auto" controls autoplay></video>
+        <button class="close-btn"><i class="fas fa-window-close"></i></button>
+    </div>
+    <script src="./app.js"></script>
+    <script src="https://kit.fontawesome.com/4eba38762e.js" crossorigin="anonymous"></script>
+</body>
+
+</html>

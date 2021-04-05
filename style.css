@@ -1,0 +1,111 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background: linear-gradient(to right top, #d16b8e, #ca5c97, #bd4fa4, #a848b3, #8647c4, #715eda, #5172ed, #0084fd, #00a8ff, #00c8ff, #00e3fe, #5ffbf1); font-family: 'Dela Gothic One', cursive
+    
+}
+.container{
+    width: 90%;
+    margin: auto;
+}
+
+.container h1{
+    padding: 20px;
+    text-align: center;
+    font-size: 50px;
+}
+
+.row{
+    display: flex;
+    justify-content: center;
+}
+
+.col{
+    min-width: 250px;
+}
+
+.feature-img{
+    width: 80%;
+    margin: auto;
+}
+
+.small-img-row{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #efefef;
+    margin: 20px; 
+    width: 80%;
+}
+
+.small-img{
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+.small-img img{
+    width: 150px;
+}
+.small-img-row p{
+    margin-left: 20px;
+    color: black;
+    font-size: 15px;
+}
+
+.play-btn{
+    background: none;
+    border: none;
+    font-size: 30px;
+    text-align: center;
+    color: white;
+    width: 60px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.play-btn-main{
+    background: none;
+    border: none;
+    font-size: 30px;
+    text-align: center;
+    color: white;
+    position: relative;
+    top: -40px;
+}
+
+.fa-play{ /*text stroke for the play button*/
+    -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color: black;
+}
+
+.video-player{
+    text-align: center;
+    width: 80%;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    display: none;
+}
+
+video:focus{/*quitar los bordes del video*/
+    outline: none;
+}
+
+.close-btn{
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    width: 30px;
+    cursor: pointer;
+    border: none;
+    background: none;
+    color: white;
+    font-size: 30px;
+}
+
+
